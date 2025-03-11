@@ -2,7 +2,7 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"; // Para crear las 3 pestañas entre los stacks
 import ProyectorStackScreen from "./ProyectorStackScreen";
 import OtrosStackScreen from "./OtrosStackScreen";
-import CerrarSesionScreen from "../CerrarSesionScreen";
+import CerrarSesionScreen from "../screens/CerrarSesionScreen";
 import { Ionicons } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();

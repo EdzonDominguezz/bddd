@@ -27,7 +27,7 @@ const CerrarSesionScreen = () => {
     return (
         <View style={styles.container}>
             {/* Imagen decorativa */}
-            <Image source={require("../assets/wedding.jpeg")} style={styles.image} />
+            <Image source={require("../assets/favicon.png")} style={styles.image} />
 
             <Text style={styles.title}>Cerrar Sesión</Text>
             <Text style={styles.subtitle}>¿Estás segura de que deseas salir?</Text>

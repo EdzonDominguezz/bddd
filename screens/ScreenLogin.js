@@ -56,7 +56,7 @@ export default function ScreenLogin() {
 
     return (
         <View style={styles.container}>
-            <Image style={styles.imagen} source={require("../assets/login3.jpg")} />
+            <Image style={styles.imagen} source={require("../assets/LogoNutriSync.png")} />
             <Text style={styles.title}>Login</Text>
 
             <View style={styles.card}>

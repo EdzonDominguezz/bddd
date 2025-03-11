@@ -1,7 +1,7 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Screen1Otros from "../Screen1Otros";
-import Screen2Otros from "../Screen2Otros";
+import Screen1Otros from "../screens/Screen1Otros";
+import Screen1Otros from "../screens/Screen2Otros";
 import CustomHeader2 from "../../components/CustomHeader2";
 
 const OtrosStack = createNativeStackNavigator();

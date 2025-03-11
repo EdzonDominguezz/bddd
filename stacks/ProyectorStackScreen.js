@@ -1,9 +1,9 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HistorialProy from "../HistorialProy";
-import ApartadosProy from "../ApartadosProy";
-import DevolverProy from "../DevolverProy";
-import CustomHeader from "../../components/CustomHeader";
+import HistorialProy from "../screens/HistorialProy";
+import ApartadosProy from "../screens/ApartadosProy";
+import DevolverProy from "../screens/DevolverProy";
+import CustomHeader from "../Components/CustomHeader";
 
 const ProyectorStack = createNativeStackNavigator();
 
