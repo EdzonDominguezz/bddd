@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'; 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StyleSheet, View, Text, ActivityIndicator } from 'react-native';
@@ -41,7 +41,11 @@ export default function App() {
         <Stack.Screen
           name="ScreenLogin"
           component={Login}
-          options={{ headerShown: true }}
+          options={{ 
+            headerShown: true,
+            headerStyle: { backgroundColor: '#8BD37A' }, // Fondo verde
+            headerTintColor: '#FFFFFF', // Texto blanco
+          }}
         />
         <Stack.Screen
           name="TabsNavigator"

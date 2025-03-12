@@ -1,7 +1,7 @@
 import React from "react"; 
 import { View, Button, StyleSheet } from "react-native"; 
-import Screen1Otros from "screens/Screen1Otros";
-import Screen2Otros from "screens/Screen2Otros"; 
+import Screen1Otros from "../screens/Screen1Otros"; 
+import Screen2Otros from "../screens/Screen2Otros"; // ✅ Corregido
 
 const CustomHeader2 = ({ navigation }) => { 
     return ( 
@@ -25,4 +25,5 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10, 
     }, 
 }); 
+
 export default CustomHeader2;

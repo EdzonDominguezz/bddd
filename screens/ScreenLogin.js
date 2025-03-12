@@ -18,7 +18,6 @@ export default function ScreenLogin() {
             await signInWithEmailAndPassword(auth, email, password);
             Alert.alert("Bienvenido!", "Inicio de sesión exitoso");
 
-            // Redirigir y limpiar historial de navegación
             navigation.reset({
                 index: 0,
                 routes: [{ name: "TabsNavigator" }],
@@ -57,8 +56,7 @@ export default function ScreenLogin() {
     return (
         <View style={styles.container}>
             <Image style={styles.imagen} source={require("../assets/LogoNutriSync.png")} />
-            <Text style={styles.title}>Login</Text>
-
+            
             <View style={styles.card}>
                 <TextInput
                     style={styles.input}
@@ -84,12 +82,9 @@ export default function ScreenLogin() {
                     <Text style={styles.buttonText}>Iniciar sesión</Text>
                 </TouchableOpacity>
 
-                <View style={styles.registrationContainer}>
-                    <Text style={styles.textGray}>¿No tienes una cuenta?</Text>
-                    <TouchableOpacity onPress={registrar}>
-                        <Text style={styles.textOrange}>Regístrate</Text>
-                    </TouchableOpacity>
-                </View>
+                <TouchableOpacity style={styles.registerButton} onPress={registrar}>
+                    <Text style={styles.buttonText}>Regístrate</Text>
+                </TouchableOpacity>
             </View>
         </View>
     );
@@ -100,20 +95,25 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#FFF5F8",
+        backgroundColor: "#ffeac4",
+    },
+    header: {
+        width: "100%",
+        backgroundColor: "#8bd37d",
+        paddingVertical: 15,
+        alignItems: "center",
+        marginTop: 0,
+    },
+    headerText: {
+        color: "#fff",
+        fontSize: 20,
+        fontWeight: "bold",
     },
     imagen: {
         width: 120,
         height: 120,
         borderRadius: 60,
         marginBottom: 20,
-    },
-    title: {
-        fontSize: 28,
-        fontWeight: "bold",
-        color: "#D63384",
-        marginBottom: 20,
-        fontFamily: "serif",
     },
     card: {
         width: "85%",
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
         width: "100%",
         height: 45,
         borderBottomWidth: 2,
-        borderBottomColor: "#D63384",
+        borderBottomColor: "#8bd37d",
         marginBottom: 20,
         fontSize: 16,
         color: "#333",
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
         fontSize: 14,
     },
     button: {
-        backgroundColor: "#D63384",
+        backgroundColor: "#8bd37d",
         paddingVertical: 12,
         paddingHorizontal: 30,
         borderRadius: 25,
@@ -154,19 +154,11 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: "bold",
     },
-    registrationContainer: {
-        marginTop: 15,
-        alignItems: "center",
-    },
-    textGray: {
-        fontSize: 12,
-        color: 'gray',
-        fontWeight: '600',
-    },
-    textOrange: {
-        fontSize: 12,
-        color: 'orange',
-        fontWeight: '600',
-        marginTop: 5,
-    },
+    registerButton: {
+        backgroundColor: "#8bd37d",
+        paddingVertical: 12,
+        paddingHorizontal: 30,
+        borderRadius: 25,
+        marginTop: 10,
+    }
 });

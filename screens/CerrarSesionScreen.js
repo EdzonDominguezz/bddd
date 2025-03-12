@@ -50,7 +50,7 @@ export default CerrarSesionScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#FFF5F8", // Fondo en color pastel romántico
+        backgroundColor: "#ffeac4", // Fondo en color pastel romántico
         justifyContent: "center",
         alignItems: "center",
         paddingHorizontal: 20,
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 28,
         fontWeight: "bold",
-        color: "#D63384", // Un rosa elegante
+        color: "#FFFFFF", // Un rosa elegante
         marginBottom: 10,
         fontFamily: "serif",
     },
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         textAlign: "center",
     },
     logoutButton: {
-        backgroundColor: "#D63384", // Rosa elegante
+        backgroundColor: "#8bd37d", // Rosa elegante
         paddingVertical: 12,
         paddingHorizontal: 40,
         borderRadius: 25,
@@ -91,15 +91,15 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
     cancelButton: {
-        backgroundColor: "#FFF",
+        backgroundColor: "#8bd37d",
         paddingVertical: 10,
         paddingHorizontal: 40,
         borderRadius: 25,
         borderWidth: 2,
-        borderColor: "#D63384",
+        borderColor: "#8bd37d",
     },
     cancelText: {
-        color: "#D63384",
+        color: "#FFFFFF",
         fontSize: 18,
         fontWeight: "bold",
     },
